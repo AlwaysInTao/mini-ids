@@ -2,7 +2,7 @@
 
 Welcome to the **SentryPy** repository! This open-source cybersecurity engine captures raw incoming network data, extracts TCP/IP socket structures, and flags malicious payloads against custom pattern signatures.
 
-[![YouTube Video Link](https://shields.io)](YOUR_YOUTUBE_VIDEO_URL_HERE)
+[![YouTube Video Link](https://shields.io)]https://www.youtube.com/watch?v=dcTYc0PLyLE
 
 ## 🚀 Core Security Features
 * **Raw Socket Sniffing:** Hooks directly into the system network interface loop to analyze lower-level IP structures.
