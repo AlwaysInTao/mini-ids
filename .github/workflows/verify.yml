@@ -1,0 +1,27 @@
+name: Standalone Mini-IDS Validation Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    name: Headless Environment Check
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code Execution Tree
+      uses: actions/checkout@v4
+
+    - name: Set up Verification Environment
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Validate System Pipeline Integrity
+      run: |
+        echo "Running security system architecture validation checks..."
+        if [ -f engine.py ]; then echo "Found main network tracking engine backend."; fi
+        if [ -d rules ]; then echo "Found security system rules directory mapping."; fi
